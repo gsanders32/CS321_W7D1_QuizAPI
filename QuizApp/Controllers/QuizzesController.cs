@@ -31,7 +31,7 @@ namespace QuizApp.Controllers
         {
             //ModelState.AddModelError("GetQuiz", "Not Implemented!");
             //return BadRequest(ModelState);
-            var quiz = _quizService.Get(id);
+            var quiz = _quizService.Get(1);
             return Ok(quiz.ToApiModel());
         }
 
